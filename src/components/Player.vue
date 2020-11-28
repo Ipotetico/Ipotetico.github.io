@@ -162,6 +162,7 @@ main {
 .controls {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 30px 15px;
 }
 
@@ -173,7 +174,57 @@ button {
   cursor: pointer;
 }
 
-.play {
-  font-size: 2opx;
+.play,
+.pause {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 15px 25px;
+  margin: 0 15px;
+  border-radius: 8px;
+  color: #ffffff;
+  background-color: #cc2e5d;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.next,
+.prev {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 20px;
+  margin: 0 15px;
+  border-radius: 6px;
+  color: #ffffff;
+  background-color: #ff5858;
+}
+
+.playlist {
+  padding: 0 30px;
+}
+.playlist h3 {
+  color: #212121;
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.playlist .song {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.playlist .song:hover {
+  color: #ff5858;
+}
+
+.playlist .song.playing {
+  color: white;
+  background-image: linear-gradient(to right, #cc2e5d, #ff5858);
 }
 </style>
